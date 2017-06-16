@@ -1,4 +1,5 @@
 #include "bgnupdate.h"
+#include <hls_opencv.h>
 using namespace cv;
 using namespace std;
 
@@ -10,7 +11,6 @@ int main (int argc, char** argv) {
    IplImage* golden;
    IplImage* dst;
    int retval=0, i;
-
 
    src    = cvLoadImage(INPUT_IMAGE,        CV_LOAD_IMAGE_GRAYSCALE);
    seg    = cvLoadImage(SEGMENTED_IMAGE,    CV_LOAD_IMAGE_GRAYSCALE);

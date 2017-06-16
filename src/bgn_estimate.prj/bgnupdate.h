@@ -2,11 +2,10 @@
 //#define __BGNUPDATE_H__
 #include <iostream>
 #include <hls_video.h>
-#include <hls_opencv.h>
 
 //Prototipo de la funcion de actualizacion de fondo
-void backgroundUpdate(const IplImage* frameg, const IplImage* imseg, IplImage* festat, 
-                      IplImage* fondog);
+void backgroundUpdate(AXI_STREAM& frameg, AXI_STREAM& imseg, AXI_STREAM& festat,
+		              AXI_STREAM& fondog, int rows, int cols)
 
 #define _CHANGEFACTOR_BACKGROUND 24
 #define _CHANGEFACTOR_FOREGROUND 35
