@@ -12,21 +12,34 @@ int main (int argc, char** argv) {
    int retval=0, i;
 
 
-   src = cvLoadImage(INPUT_IMAGE,CV_LOAD_IMAGE_GRAYSCALE);
-   seg = cvLoadImage(SEGMENTED_IMAGE,CV_LOAD_IMAGE_GRAYSCALE);
-   seed= cvLoadImage(SEED_BGN,CV_LOAD_IMAGE_GRAYSCALE);
+   src    = cvLoadImage(INPUT_IMAGE,        CV_LOAD_IMAGE_GRAYSCALE);
+   seg    = cvLoadImage(SEGMENTED_IMAGE,    CV_LOAD_IMAGE_GRAYSCALE);
+   seed   = cvLoadImage(SEED_BGN,           CV_LOAD_IMAGE_GRAYSCALE);
    golden = cvLoadImage(OUTPUT_IMAGE_GOLDEN,CV_LOAD_IMAGE_GRAYSCALE);
-   dst = cvCreateImage(cvSize(src->width,src->height), src->depth, src->nChannels);
 
-//   cv::Mat Src    = cv::cvarrToMat(src   );
-//   cv::Mat Seg    = cv::cvarrToMat(seg   );
-//   cv::Mat Seed   = cv::cvarrToMat(seed  );
-//   cv::Mat Golden = cv::cvarrToMat(golden);
+   dst    = cvCreateImage(cvSize(src->width,src->height), src->depth, src->nChannels);
 
-   printf("Tamaño de las imagen de entrada   : %d x %d\n"  , src->height, src->width);
-   printf("Tamaño de las imagen segmentada   : %d x %d\n"  , seg->height, seg->width);
-   printf("Tamaño de las imagen de referencia: %d x %d\n\n", seed->height, seed->width);
+   cv::Mat Src    = cvarrToMat(src   );
+   cv::Mat Seg    = cvarrToMat(seg   );
+   cv::Mat Seed   = cvarrToMat(seed  );
+   cv::Mat Golden = cvarrToMat(golden);
 
+   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> hlsSrc(Src.rows,Src.cols);
+   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> hlsSeg(Seg.rows,Seg.cols);
+   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> hlsSeed(Seed.rows,Seed.cols);
+   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> hlsGolden(Golden.rows,Golden.cols);
+
+   cvMat2hlsMat(Src,hlsSrc);
+   cvMat2hlsMat(Seg,hlsSeg);
+   cvMat2hlsMat(Seed,hlsSeed);
+   cvMat2hlsMat(Golden,hlsGolden);
+
+   for(i=0;i<src->width;i++) printf("%d\n",hlsSrc.read());
+
+
+//   printf("Tamaño de la imagen hlsMat de entrada   : %d x %d\n"  , hlsSrc.rows , hlsSrc.cols );
+   printf("Tamaño de la imagen hlsMat segmentada   : %d x %d\n"  , Seg.rows , Seg.cols );
+//   printf("Tamaño de la imagen hlsMat de referencia: %d x %d\n\n", hlsSeed.rows, hlsSeed.cols);
 
    backgroundUpdate(src, seg, seed, dst);
 

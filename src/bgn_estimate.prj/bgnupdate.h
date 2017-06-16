@@ -1,6 +1,5 @@
 //#ifndef __BGNUPDATE_H__
 //#define __BGNUPDATE_H__
-#include <hls_video.h>
 #include <iostream>
 #include <hls_video.h>
 #include <hls_opencv.h>
@@ -11,6 +10,8 @@ void backgroundUpdate(const IplImage* frameg, const IplImage* imseg, IplImage* f
 
 #define _CHANGEFACTOR_BACKGROUND 24
 #define _CHANGEFACTOR_FOREGROUND 35
+#define MAX_ROW 240
+#define MAX_COL 352
 #define INPUT_IMAGE      "/home/bruno/Documentos/WorkSpace/Vivado/bgn_estimate.prj/imgin.jpg"
 #define SEGMENTED_IMAGE  "/home/bruno/Documentos/WorkSpace/Vivado/bgn_estimate.prj/segm.jpg"
 #define SEED_BGN         "/home/bruno/Documentos/WorkSpace/Vivado/bgn_estimate.prj/bgmodel.jpg"

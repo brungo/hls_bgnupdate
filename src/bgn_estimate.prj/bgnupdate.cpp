@@ -1,6 +1,6 @@
 #include "bgnupdate.h"
 
-void backgroundUpdate(const IplImage* frameg, const IplImage* imseg, IplImage* festat, 
+void backgroundUpdate(const IplImage* frameg, const IplImage* imseg, IplImage* festat,
                       IplImage* fondog)
 {
    const int MINRUIDO=10;
