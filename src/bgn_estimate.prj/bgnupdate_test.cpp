@@ -29,17 +29,17 @@ int main (int argc, char** argv) {
    cv::Mat Seed   = cvarrToMat(seed  );
    cv::Mat Golden = cvarrToMat(golden);
 
-   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> hlsSrc(Src.rows,Src.cols);
-   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> hlsSeg(Seg.rows,Seg.cols);
-   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> hlsSeed(Seed.rows,Seed.cols);
-   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> hlsGolden(Golden.rows,Golden.cols);
+   hls::Mat<2*MAX_ROW,2*MAX_COL,HLS_8UC1> hlsSrc(Src.rows,Src.cols);
+   hls::Mat<2*MAX_ROW,2*MAX_COL,HLS_8UC1> hlsSeg(Seg.rows,Seg.cols);
+   hls::Mat<2*MAX_ROW,2*MAX_COL,HLS_8UC1> hlsSeed(Seed.rows,Seed.cols);
+   hls::Mat<2*MAX_ROW,2*MAX_COL,HLS_8UC1> hlsGolden(Golden.rows,Golden.cols);
 
    cvMat2hlsMat(Src,hlsSrc);
    cvMat2hlsMat(Seg,hlsSeg);
    cvMat2hlsMat(Seed,hlsSeed);
    cvMat2hlsMat(Golden,hlsGolden);
 
-   for(i=0;i<src->width;i++) printf("%d\n",hlsSrc.read());
+   //for(i=0;i<src->width;i++) printf("%d\n",hlsSrc.read());
 
 
    printf("Tamaño de la imagen hlsMat segmentada   : %d x %d\n"  , Seg.rows , Seg.cols );

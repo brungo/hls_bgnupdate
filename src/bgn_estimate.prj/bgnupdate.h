@@ -3,7 +3,7 @@
 #include <iostream>
 #include <hls_video.h>
 
-typedef hls::stream< ap_axiu< 32,1,1,1 > > AXI_STREAM;
+typedef hls::stream< ap_axiu< 8,1,1,1 > > AXI_STREAM;
 
 //Prototipo de la funcion de actualizacion de fondo
 void backgroundUpdate(AXI_STREAM& frameg, AXI_STREAM& imseg, AXI_STREAM& festat,

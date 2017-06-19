@@ -17,10 +17,10 @@ void backgroundUpdate(AXI_STREAM& frameg, AXI_STREAM& imseg, AXI_STREAM& festat,
    int cuenta=0;
    int i=0;
 
-   hls::Mat<2*MAX_ROW,2*MAX_COL,HLS_8UC1> mat_frameg(MAX_ROW,MAX_COL);
-   hls::Mat<2*MAX_ROW,2*MAX_COL,HLS_8UC1> mat_imseg(MAX_ROW,MAX_COL) ;
-   hls::Mat<2*MAX_ROW,2*MAX_COL,HLS_8UC1> mat_festat(MAX_ROW,MAX_COL);
-   hls::Mat<2*MAX_ROW,2*MAX_COL,HLS_8UC1> mat_fondog(MAX_ROW,MAX_COL);
+   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> mat_frameg(MAX_ROW,MAX_COL);
+   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> mat_imseg(MAX_ROW,MAX_COL) ;
+   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> mat_festat(MAX_ROW,MAX_COL);
+   hls::Mat<MAX_ROW,MAX_COL,HLS_8UC1> mat_fondog(MAX_ROW,MAX_COL);
 
    #pragma HLS dataflow
    hls::AXIvideo2Mat(frameg,mat_frameg);
@@ -43,7 +43,7 @@ void backgroundUpdate(AXI_STREAM& frameg, AXI_STREAM& imseg, AXI_STREAM& festat,
          frame_read  = mat_frameg.read();
     	 ptr = frame_read.val[0]        ;
     	 seg_read  = mat_imseg.read()   ;
-    	 ptr1 = frame_read.val[0]       ;
+    	 ptr1 = seg_read.val[0]       ;
     	 stat_read  = mat_festat.read() ;
     	 ptr2 = stat_read.val[0]        ;
 
@@ -65,7 +65,6 @@ void backgroundUpdate(AXI_STREAM& frameg, AXI_STREAM& imseg, AXI_STREAM& festat,
          mat_fondog.write(out_write);
       }
    }
-//   if (cuenta<MINRUIDO) cvCopy(frameg,festat);
    hls::Mat2AXIvideo(mat_fondog,fondog);
 }
 
