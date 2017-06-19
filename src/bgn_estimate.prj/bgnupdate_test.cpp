@@ -12,6 +12,11 @@ int main (int argc, char** argv) {
    IplImage* dst;
    int retval=0, i;
 
+   AXI_STREAM axi_src;
+   AXI_STREAM axi_seg;
+   AXI_STREAM axi_seed;
+   AXI_STREAM axi_dst;
+
    src    = cvLoadImage(INPUT_IMAGE,        CV_LOAD_IMAGE_GRAYSCALE);
    seg    = cvLoadImage(SEGMENTED_IMAGE,    CV_LOAD_IMAGE_GRAYSCALE);
    seed   = cvLoadImage(SEED_BGN,           CV_LOAD_IMAGE_GRAYSCALE);
@@ -37,11 +42,17 @@ int main (int argc, char** argv) {
    for(i=0;i<src->width;i++) printf("%d\n",hlsSrc.read());
 
 
-//   printf("Tamaño de la imagen hlsMat de entrada   : %d x %d\n"  , hlsSrc.rows , hlsSrc.cols );
    printf("Tamaño de la imagen hlsMat segmentada   : %d x %d\n"  , Seg.rows , Seg.cols );
-//   printf("Tamaño de la imagen hlsMat de referencia: %d x %d\n\n", hlsSeed.rows, hlsSeed.cols);
 
-   backgroundUpdate(src, seg, seed, dst);
+   IplImage2AXIvideo(src,axi_src)  ;
+   IplImage2AXIvideo(seg,axi_seg)  ;
+   IplImage2AXIvideo(seed,axi_seed);
+
+
+   backgroundUpdate(axi_src, axi_seg, axi_seed, axi_dst,MAX_ROW, MAX_COL);
+
+   AXIvideo2IplImage(axi_dst, dst);
+
 
    uchar* ptr_dst    = (uchar*) (dst->imageData);
    uchar* ptr_golden = (uchar*) (golden->imageData);
@@ -61,3 +72,5 @@ int main (int argc, char** argv) {
    return retval;
  
 }
+
+

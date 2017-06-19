@@ -3,9 +3,11 @@
 #include <iostream>
 #include <hls_video.h>
 
+typedef hls::stream< ap_axiu< 32,1,1,1 > > AXI_STREAM;
+
 //Prototipo de la funcion de actualizacion de fondo
 void backgroundUpdate(AXI_STREAM& frameg, AXI_STREAM& imseg, AXI_STREAM& festat,
-		              AXI_STREAM& fondog, int rows, int cols)
+		              AXI_STREAM& fondog, int rows, int cols);
 
 #define _CHANGEFACTOR_BACKGROUND 24
 #define _CHANGEFACTOR_FOREGROUND 35
