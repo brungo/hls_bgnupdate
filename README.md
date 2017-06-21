@@ -1,6 +1,5 @@
 # hls_bgnupdate
-Estimador de fondo de procesamiento de imagenes
+Background estimator for video processing
 
-Para correr el Makefile, en debian hay que ejecutarlo redefiniendo la 
-variable SHELL=bash.
+To run Makefile, variable SHELL=bash must be redefined.
 `make SHELL=bash all`
