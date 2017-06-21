@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="bgnupdate.cpp" path="/home/bruno/Documentos/WorkSpace/cursoHLS/bgnupdate.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="bgnupdate_test.cpp" path="/home/bruno/Documentos/WorkSpace/cursoHLS/bgnupdate_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

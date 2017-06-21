@@ -48,8 +48,10 @@ int main (int argc, char** argv) {
    IplImage2AXIvideo(seg,axi_seg)  ;
    IplImage2AXIvideo(seed,axi_seed);
 
+   while(hlsSrc.empty() && hlsSeg.empty() && hlsSeed.empty());
 
    backgroundUpdate(axi_src, axi_seg, axi_seed, axi_dst,MAX_ROW, MAX_COL);
+
 
    AXIvideo2IplImage(axi_dst, dst);
 

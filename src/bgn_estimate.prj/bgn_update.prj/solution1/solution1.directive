@@ -1,0 +1,81 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="backgroundUpdate" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="return" positionalBoolean="4"/>
+                <option name="bundle" value="CONTROL_BUS"/>
+            </pragma>
+        </directive>
+        <directive functionName="backgroundUpdate" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="register" value="" positionalBoolean="1"/>
+                <option name="both" value="" positionalBoolean="register_mode"/>
+                <option name="port" value="frameg" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="backgroundUpdate" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="register" value="" positionalBoolean="1"/>
+                <option name="both" value="" positionalBoolean="register_mode"/>
+                <option name="port" value="imseg" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="backgroundUpdate" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="register" value="" positionalBoolean="1"/>
+                <option name="both" value="" positionalBoolean="register_mode"/>
+                <option name="port" value="festat" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="backgroundUpdate" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="register" value="" positionalBoolean="1"/>
+                <option name="both" value="" positionalBoolean="register_mode"/>
+                <option name="port" value="fondog" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="backgroundUpdate" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="rows" positionalBoolean="4"/>
+                <option name="offset" value="0x14"/>
+                <option name="bundle" value="CONTROL_BUS"/>
+            </pragma>
+        </directive>
+        <directive functionName="backgroundUpdate" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_stable" value="" positionalBoolean="mode"/>
+                <option name="port" value="rows" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="backgroundUpdate" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="cols" positionalBoolean="4"/>
+                <option name="offset" value="0x1C"/>
+                <option name="bundle" value="CONTROL_BUS"/>
+            </pragma>
+        </directive>
+        <directive functionName="backgroundUpdate" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_stable" value="" positionalBoolean="mode"/>
+                <option name="port" value="cols" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="backgroundUpdate" label="" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+        <directive functionName="backgroundUpdate" label="col_iter" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="backgroundUpdate" label="" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+
