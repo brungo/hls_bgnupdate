@@ -29,42 +29,42 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate.prj/bgn_update.prj/.apc/.src</location>
+			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate/bgn_update.prj/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate.prj/bgn_update.prj/.apc/.tb</location>
+			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate/bgn_update.prj/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate.prj/bgn_update.prj/solution1/.tcls</location>
+			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate/bgn_update.prj/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/bgnupdate.cpp</name>
 			<type>1</type>
-			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate.prj/bgnupdate.cpp</location>
+			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate/bgnupdate.cpp</location>
 		</link>
 		<link>
 			<name>testbench/bgnupdate_test.cpp</name>
 			<type>1</type>
-			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate.prj/bgnupdate_test.cpp</location>
+			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate/bgnupdate_test.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate.prj/bgn_update.prj/solution1/solution1.directive</location>
+			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate/bgn_update.prj/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate.prj/bgn_update.prj/solution1/directives.tcl</location>
+			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate/bgn_update.prj/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate.prj/bgn_update.prj/solution1/script.tcl</location>
+			<location>/home/bruno/Documentos/hls_bgnupdate/src/bgn_estimate/bgn_update.prj/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
