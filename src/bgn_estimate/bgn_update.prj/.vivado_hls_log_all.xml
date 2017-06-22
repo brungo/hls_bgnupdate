@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'AXIvideo2Mat.1' to 'AXIvideo2Mat_1'." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:51.651-0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'AXIvideo2Mat.2' to 'AXIvideo2Mat_2'." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:51.626-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 240 for loop 'loop_height' in function 'AXIvideo2Mat'." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:51.619-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 352 for loop 'loop_channels' in function 'AXIvideo2Mat'." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:50.584-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 240 for loop 'loop_height' in function 'AXIvideo2Mat.1'." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:50.580-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 352 for loop 'loop_channels' in function 'AXIvideo2Mat.1'." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:50.576-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 240 for loop 'loop_height' in function 'AXIvideo2Mat.2'." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:50.572-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 352 for loop 'loop_channels' in function 'AXIvideo2Mat.2'." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:50.568-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;8, 240, 352, 0>' (/home/bruno/Escritorio/Vivado/Vivado_HLS/2016.4/common/technology/autopilot/hls/hls_video_io.h:63:9) into AXIvideo2Mat.2." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:50.564-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;8, 240, 352, 0>.1' (/home/bruno/Escritorio/Vivado/Vivado_HLS/2016.4/common/technology/autopilot/hls/hls_video_io.h:63:9) into AXIvideo2Mat.1." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:50.448-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;8, 240, 352, 0>.2' (/home/bruno/Escritorio/Vivado/Vivado_HLS/2016.4/common/technology/autopilot/hls/hls_video_io.h:63:9) into AXIvideo2Mat." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:50.444-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo&lt;8, 240, 352, 0>' (/home/bruno/Escritorio/Vivado/Vivado_HLS/2016.4/common/technology/autopilot/hls/hls_video_io.h:125:50) into Mat2AXIvideo." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:50.439-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 240 for loop 'loop_height' in function 'hls::Mat2AXIvideo&lt;8, 240, 352, 0>'." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:47.752-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 352 for loop 'loop_width' in function 'hls::Mat2AXIvideo&lt;8, 240, 352, 0>'." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:47.669-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'tmp.2': cannot find another array to be merged with." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:47.453-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'tmp.15': cannot find another array to be merged with." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:47.023-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'tmp.4': cannot find another array to be merged with." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:47.020-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'mat_fondog.data_stream.V' (bgnupdate.cpp:13)." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:47.018-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'mat_frameg.data_stream.V' (bgnupdate.cpp:10)." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:47.015-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'mat_festat.data_stream.V' (bgnupdate.cpp:12)." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:47.013-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'mat_imseg.data_stream.V' (bgnupdate.cpp:11)." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T16:56:47.007-0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;unsigned char>.1' contains leftover data, which may result in RTL simulation hanging." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T17:02:01.197-0300" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;unsigned char>.2' contains leftover data, which may result in RTL simulation hanging." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T17:02:01.189-0300" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;unsigned char>.3' contains leftover data, which may result in RTL simulation hanging." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T17:02:00.871-0300" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;unsigned char>.4' contains leftover data, which may result in RTL simulation hanging." projectName="bgn_update.prj" solutionName="solution1" date="2017-06-21T17:02:00.645-0300" type="Warning"/>
+      </csimLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
